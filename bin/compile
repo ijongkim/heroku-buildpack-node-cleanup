@@ -6,18 +6,11 @@ BUILD_DIR=$1
 echo "-----> Deleting the ui/node_modules directory"
 rm -r $BUILD_DIR/ui/node_modules
 
-echo "-----> Deleting the heroku/node directory"
-rm -r $BUILD_DIR/heroku/node
-
 echo "-----> Deleting the node_modules directory"
 rm -r $BUILD_DIR/node_modules
 
-echo "-----> Deleting the ui/rae directory"
-rm -r $BUILD_DIR/ui/rae
-
-echo "-----> Deleting the ui/consumer-react directory"
-rm -r $BUILD_DIR/ui/consumer-react
-
+echo "-----> Deleting the heroku/node directory"
+rm -r $BUILD_DIR/.heroku/node
 
 echo "-----> Deleting the nodejs.sh startup script"
 rm $BUILD_DIR/.profile.d/nodejs.sh
